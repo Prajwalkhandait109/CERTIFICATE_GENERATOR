@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Certificate Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/documentation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-certificate"></i>
+                    <span>CertGen</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#download" class="nav-link">Download</a></li>
+                    <li><a href="documentation.html" class="nav-link active">Docs</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Hero -->
+    <section class="docs-hero">
+        <div class="container">
+            <h1>Documentation</h1>
+            <p>Everything you need to know about Certificate Generator</p>
+        </div>
+    </section>
+
+    <!-- Documentation Content -->
+    <section class="docs-content">
+        <div class="container">
+            <div class="docs-layout">
+                <!-- Sidebar -->
+                <aside class="docs-sidebar">
+                    <nav class="docs-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#quick-start">Quick Start</a></li>
+                            <li><a href="#requirements">Requirements</a></li>
+                        </ul>
+                        
+                        <h3>User Guide</h3>
+                        <ul>
+                            <li><a href="#guide">Complete Guide</a></li>
+                            <li><a href="#file-formats">File Formats</a></li>
+                            <li><a href="#customization">Customization</a></li>
+                            <li><a href="#tips">Tips & Tricks</a></li>
+                        </ul>
+                        
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="docs-main">
+                    <!-- Installation -->
+                    <article id="installation" class="doc-section">
+                        <h2><i class="fas fa-download"></i> Installation</h2>
+                        <div class="doc-content">
+                            <h3>Step 1: Download</h3>
+                            <p>Download the latest version of Certificate Generator from the <a href="index.html#download">download page</a>.</p>
+                            
+                            <h3>Step 2: Extract</h3>
+                            <p>Extract the ZIP file to a folder on your computer. Right-click the ZIP file and select "Extract All".</p>
+                            
+                            <h3>Step 3: Run</h3>
+                            <p>Double-click <code>START_HERE.bat</code> or <code>CertificateGenerator.exe</code> to launch the application.</p>
+                            
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <strong>Windows Security Warning</strong>
+                                    <p>Windows may show a security warning. Click "More info" then "Run anyway". This is normal for unsigned applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Quick Start -->
+                    <article id="quick-start" class="doc-section">
+                        <h2><i class="fas fa-rocket"></i> Quick Start</h2>
+                        <div class="doc-content">
+                            <ol class="numbered-list">
+                                <li>
+                                    <strong>Launch the Application</strong>
+                                    <p>Double-click the executable. Your browser will open automatically to http://localhost:5000</p>
+                                </li>
+                                <li>
+                                    <strong>Upload Files</strong>
+                                    <p>Upload your names file (CSV/Excel) and certificate template (PNG/JPG)</p>
+                                </li>
+                                <li>
+                                    <strong>Customize</strong>
+                                    <p>Adjust font size, color, position, and style</p>
+                                </li>
+                                <li>
+                                    <strong>Generate</strong>
+                                    <p>Click "Generate Certificates" and download your results</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <!-- Requirements -->
+                    <article id="requirements" class="doc-section">
+                        <h2><i class="fas fa-laptop"></i> System Requirements</h2>
+                        <div class="doc-content">
+                            <div class="requirements-grid">
+                                <div class="requirement-card">
+                                    <i class="fas fa-windows"></i>
+                                    <h4>Operating System</h4>
+                                    <p>Windows 10 or Windows 11</p>
+                                </div>
+                                <div class="requirement-card">
+                                    <i class="fas fa-memory"></i>
+                                    <h4>RAM</h4>
+                                    <p>4 GB minimum</p>
+                                </div>
+                                <div class="requirement-card">
+                                    <i class="fas fa-hdd"></i>
+                                    <h4>Storage</h4>
+                                    <p>500 MB free space</p>
+                                </div>
+                                <div class="requirement-card">
+                                    <i class="fas fa-globe"></i>
+                                    <h4>Browser</h4>
+                                    <p>Chrome, Firefox, or Edge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- User Guide -->
+                    <article id="guide" class="doc-section">
+                        <h2><i class="fas fa-book"></i> Complete User Guide</h2>
+                        <div class="doc-content">
+                            <h3>Preparing Your Files</h3>
+                            
+                            <h4>Names File</h4>
+                            <p>Create a CSV or Excel file with a column named "name":</p>
+                            <div class="code-block">
+                                <pre>name
+John Smith
+Sarah Johnson
+Michael Brown
+Emily Davis</pre>
+                            </div>
+                            
+                            <h4>Certificate Template</h4>
+                            <ul>
+                                <li>Use PNG or JPG format</li>
+                                <li>Recommended size: 1200x800 pixels or larger</li>
+                                <li>Leave blank space where names will appear</li>
+                                <li>Ensure good contrast for text visibility</li>
+                            </ul>
+                            
+                            <h3>Using the Application</h3>
+                            
+                            <h4>1. Upload Files</h4>
+                            <p>Click "Choose File" for both the names file and template image.</p>
+                            
+                            <h4>2. Customize Settings</h4>
+                            <ul>
+                                <li><strong>Font Size:</strong> 10-200 pixels (default: 60)</li>
+                                <li><strong>Text Color:</strong> Choose from presets or enter custom color</li>
+                                <li><strong>Position:</strong> X and Y coordinates for text placement</li>
+                                <li><strong>Font Family:</strong> Arial, Times New Roman, etc.</li>
+                                <li><strong>Output Format:</strong> PNG or PDF</li>
+                            </ul>
+                            
+                            <h4>3. Generate Certificates</h4>
+                            <p>Click "Generate Certificates" and wait for processing to complete.</p>
+                            
+                            <h4>4. Download</h4>
+                            <p>Download certificates individually or as a ZIP file containing all certificates.</p>
+                        </div>
+                    </article>
+
+                    <!-- File Formats -->
+                    <article id="file-formats" class="doc-section">
+                        <h2><i class="fas fa-file"></i> Supported File Formats</h2>
+                        <div class="doc-content">
+                            <div class="format-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Formats</th>
+                                            <th>Max Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Names File</td>
+                                            <td>CSV, XLSX</td>
+                                            <td>16 MB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Template</td>
+                                            <td>PNG, JPG, JPEG</td>
+                                            <td>16 MB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Output</td>
+                                            <td>PNG, PDF</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Customization -->
+                    <article id="customization" class="doc-section">
+                        <h2><i class="fas fa-palette"></i> Customization Options</h2>
+                        <div class="doc-content">
+                            <h3>Font Settings</h3>
+                            <ul>
+                                <li><strong>Size:</strong> Adjust based on template size (40-80px for most templates)</li>
+                                <li><strong>Family:</strong> Choose from system fonts</li>
+                                <li><strong>Color:</strong> Use contrasting colors for readability</li>
+                            </ul>
+                            
+                            <h3>Position Settings</h3>
+                            <p>The position is specified in X (horizontal) and Y (vertical) coordinates:</p>
+                            <ul>
+                                <li><strong>X:</strong> Distance from left edge (0 = left, higher = right)</li>
+                                <li><strong>Y:</strong> Distance from top edge (0 = top, higher = bottom)</li>
+                            </ul>
+                            
+                            <div class="alert alert-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <strong>Pro Tip</strong>
+                                    <p>Start with the center of your template and adjust in small increments (10-20 pixels) until perfect.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tips & Tricks -->
+                    <article id="tips" class="doc-section">
+                        <h2><i class="fas fa-magic"></i> Tips & Tricks</h2>
+                        <div class="doc-content">
+                            <div class="tips-grid">
+                                <div class="tip-card">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>Test First</h4>
+                                    <p>Generate one certificate first to verify positioning before processing all names.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>High Resolution</h4>
+                                    <p>Use high-resolution templates (300 DPI) for professional printing quality.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>Contrast Matters</h4>
+                                    <p>Ensure text color contrasts well with the background for readability.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h4>Longest Name</h4>
+                                    <p>Test with the longest name in your list to ensure it fits properly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Troubleshooting -->
+                    <article id="troubleshooting" class="doc-section">
+                        <h2><i class="fas fa-wrench"></i> Troubleshooting</h2>
+                        <div class="doc-content">
+                            <div class="troubleshoot-item">
+                                <h4>Application Won't Start</h4>
+                                <ul>
+                                    <li>Check Windows security warning and click "Run anyway"</li>
+                                    <li>Ensure port 5000 is not in use by another application</li>
+                                    <li>Try running as administrator</li>
+                                    <li>Check antivirus isn't blocking the executable</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <h4>Browser Doesn't Open</h4>
+                                <ul>
+                                    <li>Wait 5-10 seconds for the server to start</li>
+                                    <li>Manually open http://localhost:5000 in your browser</li>
+                                    <li>Check firewall settings</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <h4>Files Won't Upload</h4>
+                                <ul>
+                                    <li>Verify file format (CSV/XLSX for names, PNG/JPG for template)</li>
+                                    <li>Check file size is under 16 MB</li>
+                                    <li>Ensure files are not corrupted</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <h4>Names Not Appearing</h4>
+                                <ul>
+                                    <li>Ensure CSV/Excel has "name" column header</li>
+                                    <li>Check for empty rows in your file</li>
+                                    <li>Verify names are in the first column</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="troubleshoot-item">
+                                <h4>Text Position Wrong</h4>
+                                <ul>
+                                    <li>Adjust X coordinate to move left/right</li>
+                                    <li>Adjust Y coordinate to move up/down</li>
+                                    <li>Make small adjustments (10-20 pixels at a time)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FAQ -->
+                    <article id="faq" class="doc-section">
+                        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                        <div class="doc-content">
+                            <div class="faq-list">
+                                <div class="faq-doc-item">
+                                    <h4>Do I need Python installed?</h4>
+                                    <p>No! The executable includes everything you need. Just download and run.</p>
+                                </div>
+                                
+                                <div class="faq-doc-item">
+                                    <h4>Is my data safe?</h4>
+                                    <p>Yes! All processing happens locally on your computer. No data is sent to any server or cloud service.</p>
+                                </div>
+                                
+                                <div class="faq-doc-item">
+                                    <h4>Can I use custom fonts?</h4>
+                                    <p>Currently, the application uses system fonts. Custom font support may be added in future versions.</p>
+                                </div>
+                                
+                                <div class="faq-doc-item">
+                                    <h4>How many certificates can I generate at once?</h4>
+                                    <p>Unlimited! You can generate as many certificates as you need in a single batch.</p>
+                                </div>
+                                
+                                <div class="faq-doc-item">
+                                    <h4>Does it work offline?</h4>
+                                    <p>Yes! Once downloaded, the application works completely offline without an internet connection.</p>
+                                </div>
+                                
+                                <div class="faq-doc-item">
+                                    <h4>Can I use it for commercial purposes?</h4>
+                                    <p>Yes! The application is free to use for both personal and commercial purposes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Support -->
+                    <article class="doc-section">
+                        <h2><i class="fas fa-life-ring"></i> Need More Help?</h2>
+                        <div class="doc-content">
+                            <div class="support-card">
+                                <p>If you're still experiencing issues or have questions not covered in this documentation, please check the included USER_GUIDE.md file in your download for more detailed information.</p>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-certificate"></i>
+                        <span>CertGen</span>
+                    </div>
+                    <p>Create professional certificates in seconds.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#download">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Certificate Generator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
